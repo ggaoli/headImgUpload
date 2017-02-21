@@ -6,4 +6,4 @@ Image upload plugin (头像上传组件)
 - ie7+
 
 ### 组件效果展示
-![image](https://github.com/ggaoli/headImgUpload/images/mdImg/pluginshow.gif)
+![image](https://github.com/ggaoli/headImgUpload/raw/master/images/mdImg/pluginshow.gif)
