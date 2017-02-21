@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh" class="no-js">
+<head>
+    <title>头像上传</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/reset.css" type="text/css">
+    <!--头像上传css文件-->
+    <link rel="stylesheet" href="style/jquery.Jcrop.css" type="text/css">
+    <link rel="stylesheet" href="style/headImgUpload.css" type="text/css">
+    <!--依赖css弹出层-->
+    <link rel="stylesheet" href="style/popup.css" type="text/css">
+    <script src="javascript/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+
+<div class="main" id="frame_main">
+    <div class="row margin-t">
+        <div class="white-bg">
+            <div class="panel-body clearfix">
+                <div class="blue-left-title">
+                    <span>头像上传组件</span>
+                </div>
+                <div class="pad20">
+                    <div class="head-img-show" id="headImgShow">
+                        <img src="images/default.png" alt="" class="click-block" reveal-model-id="popup-head-upload">
+                        <a href="#" class="head-img-add-btn click-block" id="headAddBtn" reveal-model-id="popup-head-upload">头像上传</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--头像上传弹出层-->
+<div class="head-img-layout">
+    <div class="box-content" id="popup-head-upload">
+        <h2>头像选择<a href="#" class="close-reveal-model">×</a></h2>
+        <div>
+            <div class="wrap">
+                <div class="head-img-tab">
+                    <ul class="clearfix" id="headimg_upload">
+                        <li class="on"><a href="#">自定义上传</a></li>
+                        <li><a href="#">默认头像</a></li>
+                    </ul>
+                </div>
+                <div class="mod-con clearfix">
+                    <div class="head-img-tab-con">
+                        <div id="head-img-upload_1" style="display: block">
+                            <div>
+                                <div id="uploader" class="custom-upload" >
+                                    <div class="queueList">
+                                        <div id="dndArea" class="placeholder">
+                                            <div id="filePicker"></div>
+                                            <p>或者可以将图片拖到这里</p>
+                                        </div>
+                                    </div>
+                                    <div class="statusBar" >
+                                        <div class="btns">
+                                            <i class="png"></i>
+                                            <div id="filePicker2"></div>
+                  !                          <!--<div class="uploadBtn">开始上传</div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-grop clearfix">
+                                    <a class="close-reveal-model button uploaderBtnSure btn-radius" id="uploaderBtnSure">确定</a>
+                                    <a class="close-reveal-model margin-l10 button btn-secondary btn-radius">取消</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="head-img-upload_2" style="display: none">
+                            <div class="head-default" id="head-default"></div>
+                            <div class="btn-grop clearfix">
+                                <a class="close-reveal-model button defaultBtnSure btn-radius" id="defaultBtnSure">确定</a>
+                                <a class="close-reveal-model margin-l10 button btn-secondary btn-radius">取消</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head-img-preview">
+                        <div class="preview-con" id="preview-pane">
+                            <div class="title">效果预览</div>
+                            <div class="crop-img-60" id="crop-img-60">
+                                <div class="crop-img-container">
+                                    <img src="images/default.png" alt="">
+                                </div>
+                                <span>60*60px</span>
+                            </div>
+                            <div class="crop-img-120" id="crop-img-120">
+                                <div class="crop-img-container">
+                                    <img src="images/default.png" alt="">
+                                </div>
+                                <span>120*120px</span>
+                            </div>
+                            <div class="title">历史头像</div>
+                            <div class="history-head-img">
+                                <ul class="clearfix">
+                                    <li><img src="images/default.png" alt=""></li>
+                                    <li><img src="images/default.png" alt=""></li>
+                                    <li><img src="images/default.png" alt=""></li>
+                                    <li><img src="images/default.png" alt=""></li>
+                                    <li><img src="images/default.png" alt=""></li>
+                                    <li><img src="images/default.png" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--依赖js文件-->
+<script src="javascript/tab.exam.js" type="text/javascript"></script>
+<script src="javascript/reveal-model.js" type="text/javascript"></script>
+<!--头像上传组件-->
+<script src="javascript/webuploader.js" type="text/javascript"></script>
+<script src="javascript/jquery.Jcrop.js" type="text/javascript"></script>
+<script src="javascript/headImgUpload.js" type="text/javascript"></script>
+
+</body>
+</html>

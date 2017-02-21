@@ -1,0 +1,8 @@
+{
+  "postType":["convention","study","ceremony","interactive","earthquake","help","donate","others"],
+  "headType":[
+    {"file":"classics","title":"经典头像"},
+    {"file":"party","title":"党组织推荐头像"},
+    {"file":"person","title":"个人推荐头像"}
+  ]
+}

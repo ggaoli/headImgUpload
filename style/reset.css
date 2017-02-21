@@ -1,0 +1,66 @@
+@charset "utf-8";
+/*初始化样式*/
+/*html {height:100%;}*/
+body { max-height:100%;height:100%;margin:0;padding:0;border:0;line-height:1.5;  font-size:12px; font-family: "宋体", Helvetica, serif;  color: #333;  font-weight: normal;  font-style: normal;  cursor: auto;  background: #EFF2F9;  }
+form {margin:0;	padding:0;}
+img {border:0;height:auto;margin:0;	padding:0;  -ms-interpolation-mode: bicubic;vertical-align: middle;}
+ul, ol, li {margin:0;padding:0;	list-style:none;}
+h1, h2, h3, h4, h5, h6 {  font-family: "微软雅黑", "Open Sans", serif;font-size:100%;	margin:0;padding:0;font-weight: normal;word-wrap: break-word;}
+td, select, input, textarea {  color:#333; }
+div, p, blockquote, dl, dt, dd, tr, th, td, center, input, button, textarea{padding:0;margin:0;word-wrap: break-word;}
+.clearfix:after{ content:""; height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{ zoom:1;}
+a {color:#333;  text-decoration:none;  cursor:pointer;  border:0;  }
+a:hover {cursor: pointer;color:#2898fd; }
+
+/*滚动条*/
+::-webkit-scrollbar{width:10px;overflow:visible;height: 10px}
+::-webkit-scrollbar-button{height:0;width:0}
+::-webkit-scrollbar-track{background-clip:padding-box;border:1px solid transparent}
+::-webkit-scrollbar-track:horizontal{border-width:2px 0 0}
+::-webkit-scrollbar-track:hover {background-color:rgba(0,0,0,.05);border: 1px solid rgba(0,0,0,.1)}
+::-webkit-scrollbar-track:horizontal:hover{border:1px solid rgba(0,0,0,.1)}
+::-webkit-scrollbar-track:active{background-color:rgba(0,0,0,.1);border:1px solid rgba(0,0,0,.2)}
+::-webkit-scrollbar-track:horizontal:active{border:1px solid rgba(0,0,0,.2)}
+::-webkit-scrollbar-thumb{background-clip:padding-box;background:rgba(0,0,0,.08);border:1px solid rgba(0,0,0,.1);border-radius:6px}
+::-webkit-scrollbar-thumb:hover{background: rgba(36,36,36,.15)}
+
+.panel-body {
+    padding: 20px;
+    display: block;
+    position: relative;
+    height: auto !important;
+    min-height: 450px;
+    font-family: "微软雅黑", "Open Sans", serif;
+}
+.white-bg {
+    background: white !important;
+}
+.pad20 {
+    padding: 20px;
+}
+.margin-t {
+    margin-top: 20px !important;
+}
+.blue-left-title{
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    padding:11px 20px;
+    font-family: "微软雅黑", "Open Sans", serif;
+    position: relative;
+}
+.blue-left-title .tool-tip{
+    display: inline-block;
+    *display: inline;
+    position: relative;
+    margin-top: -10px;
+    /* top: 15px; */
+}
+.blue-left-title span {
+    border-left: 3px solid #2898fd;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    padding-left: 10px;
+    font-family: "微软雅黑", "Open Sans", serif;
+}
